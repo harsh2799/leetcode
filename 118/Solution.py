@@ -32,3 +32,25 @@ class Solution:
     #                 y.append(x[i-1][j-1] + x[i-1][j])
     #         x.append(y)
     #     return x
+
+	"""
+		Another Solution
+	# """
+	# def fact(self, num: int)-> int:
+    #     if num == 0 or num == 1:
+    #         return 1
+    #     else:
+    #         prod = 1
+    #         for i in range(2, num+1):
+    #             prod *= i
+    #         return prod
+        
+    
+    # def generate(self, numRows: int) -> List[List[int]]:
+    #     x = []
+    #     for i in range(0, numRows):
+    #         temp = []
+    #         for j in range(0, i+1):
+    #             temp.append(self.fact(i)//(self.fact(j)*self.fact(i-j)))
+    #         x.append(temp)
+    #     return x
